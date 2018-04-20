@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "65931866739",
+    "project_id": "android-shop-184508"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65931866739:android:20c1fb181a7c7e74",
+        "android_client_info": {
+          "package_name": "net.blogsv.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65931866739-54mpf6p4g200ha584ds01j7dk0h0fgcr.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "65931866739-on9r8mcmldi9ur67gdrjus3r6qkofke6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.blogsv.shop",
+            "certificate_hash": "8e34c7c6e60a7de25a345c6ae54eb6feb0b19f0b"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxi-07elMF2L5K4nIYELFsQ0ez6m0PFZU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

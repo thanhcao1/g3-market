@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">G3 Market</string>
+    <string name="facebook_app_id">1398516033604219</string>
+    <string name="fb_login_protocol_scheme">fb1398516033604219</string>
+    <string name="title_activity_thong_tin">Map</string>
+
+</resources>

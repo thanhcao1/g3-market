@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.blogsv.shop.activity.RegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarmanhinhchinh"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbarc"
+        app:navigationIcon="@drawable/reg"
+        app:title="Đăng ký tài khoản"
+        app:titleTextColor="#fff">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="5dp"
+        android:weightSum="11">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="83dp"
+                android:layout_marginBottom="40dp"
+                android:src="@drawable/logo" />
+            <EditText
+                android:id="@+id/edUserreg"
+                android:background="@drawable/edit_dep"
+                android:drawablePadding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:drawableLeft="@drawable/user"
+                android:hint=" Tên tài khoản"
+                android:paddingLeft="15dp" />
+
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/edPassreg"
+                android:background="@drawable/edit_dep"
+                android:drawablePadding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="15dp"
+                android:drawableLeft="@drawable/password"
+                android:hint=" Mật khẩu" />
+            <EditText
+                android:id="@+id/edEmailreg"
+                android:background="@drawable/edit_dep"
+                android:drawablePadding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="15dp"
+                android:drawableLeft="@drawable/email"
+                android:hint=" Email"
+                android:inputType="textEmailAddress"/>
+            <EditText
+                android:id="@+id/edPhonereg"
+                android:background="@drawable/edit_dep"
+                android:drawablePadding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="15dp"
+                android:drawableLeft="@drawable/phone"
+                android:hint=" Phone"
+                android:inputType="phone"/>
+            <EditText
+                android:id="@+id/edDiachireg"
+                android:background="@drawable/edit_dep"
+                android:drawablePadding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="15dp"
+                android:drawableLeft="@drawable/addressn"
+                android:hint=" Địa chỉ" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+            <Button
+                android:id="@+id/btnDangky"
+                android:background="@drawable/button_dep"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Đăng Ký"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

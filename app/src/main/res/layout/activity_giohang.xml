@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.blogsv.shop.activity.Giohang"
+    android:weightSum="10">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbargiohang"
+        app:title="Giỏ hàng"
+        app:titleTextColor="#ffff"
+
+        android:background="@drawable/toolbarc"></android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giỏ hàng bạn đang rỗng"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:id="@+id/textviewthongbao"
+                />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listviewgiohang"></ListView>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng tiền : "
+                    android:textStyle="bold"
+                    android:textColor="#f20"
+                    android:textSize="23sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:layout_weight="1"
+                android:paddingRight="10dp">
+                <TextView
+                    android:id="@+id/textviewtongtien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá trị"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:textColor="#f20"
+                    android:textSize="23sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="20dp"
+        android:id="@+id/buttonthanhtoangiohang"
+        android:text="Thanh toán giỏ hàng"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/pay"
+        android:textAllCaps="false"
+        android:background="@drawable/btnpay_tt"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+    <Button
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/buttontieptucmuahang"
+        android:drawableLeft="@drawable/tieptuc"
+        android:paddingLeft="20dp"
+        android:text="Tiếp tục mua hàng"
+        android:textAllCaps="false"
+        android:background="@drawable/btnpay_tt"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+</LinearLayout>
